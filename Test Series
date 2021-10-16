@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long long t;
+    cin>>t;
+    while(t--)
+    {
+        long long a;
+        long long india =0,eng =0;
+        for(int i=0;i<5;i++)
+        {
+            cin>>a;
+            if(a==1)
+            {
+                india++;
+                
+            }
+            else if(a==2)
+            {
+                eng++;
+            }
+        }
+        if(india>eng)
+        {
+            cout<<"INDIA\n";
+            
+        }
+        else if(eng>india)
+        {
+            cout<<"ENGLAND\n";
+        }
+        else{
+            cout<<"DRAW\n";
+        }
+    }
+    
+}
